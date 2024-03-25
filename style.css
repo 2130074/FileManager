@@ -1,0 +1,79 @@
+body {
+    background-image: url('./img.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 32px;
+    font-family: "Poppins", sans-serif;
+    background-repeat: round;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.contenedor-transparente {
+    background-color: rgba(255, 255, 255, 0.2); 
+    width: calc(100% - 160px); 
+    height: calc(100% - 60px); 
+    margin: 30px 80px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 151.2px; 
+}
+
+h2 {
+    font-size: 36px; 
+    font-weight: bold; 
+    margin: 50px 0 38px;
+    color: #EF3167;
+    align-self: center; 
+}
+
+.boton-listar,
+.boton-mostrar,
+.boton-subir,
+.boton-borrar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+    margin-right: 2cm; 
+    background-color: #FF779E;
+}
+
+.boton-listar:hover,
+.boton-mostrar:hover,
+.boton-subir:hover,
+.boton-borrar:hover,
+.boton-salir:hover {
+    background-color: #fed5e1;
+}
+
+
+.boton-salir{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+    margin-left: auto; 
+    color: white;
+    background-color: #FEACC4;
+    margin-top: 500px; 
+}
+
+.boton-listar:hover,
+.boton-mostrar:hover,
+.boton-subir:hover,
+.boton-borrar:hover,
+.boton-salir:hover {
+    background-color: #FDC5D6;
+}
