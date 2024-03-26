@@ -35,7 +35,6 @@ h2 {
 }
 
 .boton-listar,
-.boton-mostrar,
 .boton-subir,
 .boton-borrar {
     padding: 10px 20px;
@@ -49,7 +48,6 @@ h2 {
 }
 
 .boton-listar:hover,
-.boton-mostrar:hover,
 .boton-subir:hover,
 .boton-borrar:hover,
 .boton-salir:hover {
@@ -71,7 +69,6 @@ h2 {
 }
 
 .boton-listar:hover,
-.boton-mostrar:hover,
 .boton-subir:hover,
 .boton-borrar:hover,
 .boton-salir:hover {

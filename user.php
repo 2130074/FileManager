@@ -28,7 +28,6 @@
 
 <div class="botones-container">
     <button class="boton-listar">Listar archivos</button>
-    <button class="boton-mostrar">Mostrar archivos</button>
  </div>
  <div class="lista-archivos"></div>
  <button class="boton-salir" onclick="location.href='./login.php'">Cerrar sesión</button>
