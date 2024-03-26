@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manejador de Archivos</title>
-  <link rel="stylesheet" href="./styless.css">
+  <link rel="stylesheet" href="./estilos/styless.css">
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
