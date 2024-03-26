@@ -75,8 +75,7 @@
       </div>
     </div>
     <script src="./js/subir_archivo.js" defer></script>
-
-  
+    
     <button class="boton-salir" onclick="location.href='./login.php'">Cerrar sesión</button>
   </div>
 
