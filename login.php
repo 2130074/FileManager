@@ -10,7 +10,7 @@
   <div class="background"></div>
   <div class="card">
     <h2>Bienvenidos</h2>
-    <form class="form" action="./index.php" method="post">
+    <form class="form" action="./login.php" method="post">
       <input type="text" placeholder="Nombre" name="nombre" id="nombre">
       <input type="password" placeholder="Contraseña" name="password" id="password">
       <button type="submit">Iniciar</button>

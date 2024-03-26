@@ -15,7 +15,8 @@
     <button class="boton-mostrar">Mostrar archivos</button>
  </div>
 
-<button class="boton-salir">Cerrar sesión</button>
+ <button class="boton-salir" onclick="location.href='./login.php'">Cerrar sesión</button>
+
 
 </body>
 </html>
