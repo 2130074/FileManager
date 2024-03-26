@@ -28,7 +28,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultado) {
         session_start();
         $_SESSION["usuario"] = $resultado; 
-        header("Location: ./index.php"); 
+        
+        // Redirigir al usuario dependiendo de su rol
+        if ($resultado["esAdmin"]) {
+            header("Location: ./index.php"); 
+        } else {
+            header("Location: ./user.php"); 
+        }
+        
         exit(); 
     } else {
         echo "<p>Usuario no autenticado</p>";
@@ -36,8 +43,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 </body>
-
-
 </html>
