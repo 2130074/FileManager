@@ -30,8 +30,23 @@
     <button class="boton-listar">Listar archivos</button>
  </div>
  <div class="lista-archivos"></div>
- <button class="boton-salir" onclick="location.href='./login.php'">Cerrar sesión</button>
+ <button class="boton-salir" onclick="cerrarSesion()">Cerrar sesión</button>
 
+ <button class="boton-salir" onclick="cerrarSesion()">Cerrar sesión</button>
+<script>
+function cerrarSesion() {
+    // Realizar una solicitud AJAX al script PHP para cerrar la sesión
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "cerrar_sesion.php", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // Redirigir al usuario a login.php después de cerrar la sesión
+            location.href = './login.php';
+        }
+    };
+    xhr.send();
+}
+</script>
 
 </body>
 </html>
