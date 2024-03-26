@@ -35,8 +35,7 @@ h2 {
 }
 
 .boton-listar,
-.boton-subir,
-.boton-borrar {
+.boton-subir {
     padding: 10px 20px;
     border: none;
     border-radius: 10px; 
@@ -47,13 +46,16 @@ h2 {
     background-color: #FF779E;
 }
 
-.boton-listar:hover,
-.boton-subir:hover,
-.boton-borrar:hover,
-.boton-salir:hover {
-    background-color: #fed5e1;
+.boton-borrar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+    margin-right: 2cm; 
+    background-color: #FEACC4;
 }
-
 
 .boton-salir{
     padding: 10px 20px;

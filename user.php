@@ -10,7 +10,7 @@
     document.addEventListener("DOMContentLoaded", function() {
       document.querySelector(".boton-listar").addEventListener("click", function() {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "listar_archivos.php", true);
+        xhr.open("GET", "./listar_archivos_user.php", true);
         xhr.onreadystatechange = function() {
           if (xhr.readyState === 4 && xhr.status === 200) {
             document.querySelector(".lista-archivos").innerHTML = xhr.responseText;

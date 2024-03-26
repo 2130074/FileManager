@@ -23,6 +23,27 @@
                 window.open(urlArchivo, "_blank");
               });
             });
+            // Agregar evento de clic a los botones de borrar
+            // Agregar evento de clic a los botones de borrar
+            var botonesBorrar = document.querySelectorAll(".boton-borrar");
+            botonesBorrar.forEach(function(boton) {
+              boton.addEventListener("click", function() {
+                var nombreArchivo = boton.getAttribute("data-nombre"); // Obtiene el nombre del archivo del atributo data-nombre
+                var confirmacion = confirm("¿Está seguro que desea borrar " + nombreArchivo + "?");
+                if (confirmacion) {
+                  var fila = boton.closest("tr");
+                  var xhrBorrar = new XMLHttpRequest();
+                  xhrBorrar.open("GET", "borrar_archivo.php?nombre=" + encodeURIComponent(nombreArchivo), true);
+                  xhrBorrar.onreadystatechange = function() {
+                    if (xhrBorrar.readyState === 4 && xhrBorrar.status === 200) {
+                      fila.remove(); // Eliminar la fila del archivo de la tabla
+                      alert("El archivo ha sido borrado exitosamente.");
+                    }
+                  };
+                  xhrBorrar.send();
+                }
+              });
+            });
           }
         };
         xhr.send();
@@ -38,7 +59,6 @@
     <div class="botones-container">
       <button class="boton-listar">Listar archivos</button>
       <button class="boton-subir">Subir archivos</button>
-      <button class="boton-borrar">Borrar archivos</button>
     </div>
     <div class="lista-archivos"></div>
     <button class="boton-salir" onclick="location.href='./login.php'">Cerrar sesión</button>
