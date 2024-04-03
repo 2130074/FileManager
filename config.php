@@ -19,3 +19,4 @@ $CONTENT_TYPES_EXT = [
     "pdf" => "application/pdf",
     "bin" => "application/octet-stream"
 ];
+

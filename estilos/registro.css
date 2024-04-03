@@ -20,9 +20,9 @@ input:focus{
     overflow: hidden;
     position: relative;
     z-index: 3;
-    width: 80%; 
-    max-width: 400px; 
-    padding: 140px 30px 80px; 
+    width: 90%;
+    max-width: 600px;
+    padding: 100px 30px 50px;
     border-radius: 24px;
     background: #ffffff;
     text-align: center;
@@ -44,7 +44,7 @@ input:focus{
 .card > h2 {
     font-size: 22px;
     font-weight: bold; 
-    margin: 0 0 38px;
+    margin: 30px 0 15px; 
     color: rgb(0, 0, 0);
 }
 
@@ -81,9 +81,23 @@ input:focus{
     font-weight: 500;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin: 5px 0px 0px; 
 }
 
 .form > button:hover {
     background: #FEACC4;
     transition: transform 0.3s ease; 
+}
+
+.gender-date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.gender-date-container select,
+.gender-date-container input[type="date"] {
+    width: 150px; 
 }
